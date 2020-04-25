@@ -9,7 +9,9 @@
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 <!--        IMPORTANT TIP: HERE WE USE THE SCHEMA NAME AFTER LOCAL HOST. NOT THE TABLE NAME-->
 <!--         if you face such error https://developer.jboss.org/thread/188886 always use root user for connection-->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost/company?useSSL=false</property>
+<!--        <property name="hibernate.connection.url">jdbc:mysql://localhost/company?useSSL=false</property>-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/hb-01-one-to-one-uni?useSSL=false</property>
+
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">QWEasd123@</property>
         <property name="hibernate.hbm2ddl.auto">update</property>

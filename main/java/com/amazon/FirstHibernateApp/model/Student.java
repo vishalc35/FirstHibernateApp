@@ -5,6 +5,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+// Use this for refernce https://examples.javacodegeeks.com/enterprise-java/hibernate/hibernate-annotations-example/
+// Otherwise use refernec form udemy tutorial
+
 @Entity
 @Table(name="student")
 public class Student {

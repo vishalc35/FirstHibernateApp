@@ -12,6 +12,8 @@ public class Student {
     @Id
     @Column(name="id")
     @Getter @Setter
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /**REMEMBER TO MAKE THE PRIMARY KEY COLUMN TO AUTO INCREMENT**/
     private int id;
     @Column(name="first_name")
     @Getter @Setter
@@ -28,8 +30,7 @@ public class Student {
 
     }
 
-    public Student(int id,String firstName, String lastName, String email) {
-        this.id = id;
+    public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
